@@ -49,14 +49,14 @@ a {
           line-height: 28px;
           display: block; }
     .header-home .encabezado nav .menu input[type="checkbox"]:checked ~ ul {
-      height: 240px;
+      height: 100%;
       transition: height 0.5s ease-in-out;
       -moz-transition: height 0.5s ease-in-out;
       -o-transition: height 0.5s ease-in-out;
       -webkit-transition: height 0.5s ease-in-out; }
     .header-home .encabezado nav .menu input {
       display: block;
-      width: 40px;
+      width: 200px;
       height: 32px;
       opacity: 0;
       z-index: 2;
@@ -86,26 +86,31 @@ a {
       transform: rotate(-45deg) translate(1px, 0px); }
 
 @media screen and (max-width: 1000px) {
-  .header-home .menu ul {
-    display: flex;
-    list-style: none;
-    background-color: #FFFFFF;
-    overflow: hidden;
-    background: none;
-    height: none;
-    position: none; }
-    .header-home .menu ul li {
-      padding: 5px 10px;
-      align-self: end; }
-      .header-home .menu ul li a {
-        color: #572EE5;
-        padding: unset;
-        padding-right: 48px;
-        line-height: unset; }
-  .header-home .menu input {
-    display: none; }
-  .header-home .menu span {
-    display: none; } }
+  .header-home .encabezado {
+    padding: 30px 156px; }
+    .header-home .encabezado nav .menu ul {
+      display: flex;
+      flex-direction: row;
+      list-style: none;
+      background-color: #FFFFFF;
+      overflow: hidden;
+      background: none;
+      height: none;
+      position: none; }
+      .header-home .encabezado nav .menu ul li {
+        padding: 5px 10px;
+        align-self: end; }
+        .header-home .encabezado nav .menu ul li a {
+          color: #572EE5;
+          padding: unset;
+          padding-right: 48px;
+          line-height: unset; }
+        .header-home .encabezado nav .menu ul li a:hover {
+          color: unset; }
+    .header-home .encabezado nav .menu input {
+      display: none; }
+    .header-home .encabezado nav .menu span {
+      display: none; } }
 /*main*/
 .main-home .titulo {
   display: flex;
