@@ -1,0 +1,33 @@
+.footer-home{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 20px;
+    p{
+        width: 100%;
+        text-align: center;
+        color: $colorparrafos;
+        font-family: $fontparrafos;
+        font-size: 15px;
+    }
+    ul{
+        padding: 10px;
+        li{
+            display: inline-block;
+            flex-wrap:unset;
+            a{
+                padding: 10px;
+                color: #CDD6E0;
+            }
+        }
+    }
+    span{
+        text-align: center;
+        width: 100%;
+        padding: 10px;
+        color: $colorparrafos;
+        font-family: $fontparrafos;
+        font-size: 15px;
+    }
+}

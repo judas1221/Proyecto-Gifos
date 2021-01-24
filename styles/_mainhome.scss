@@ -1,0 +1,88 @@
+.main-home{
+    .titulo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding: 20px 100px;
+        h1{
+            width: 100%;
+            text-align: center;
+            color: $colortitulos;
+            font-family: $fonttitulos;
+            font-size: 30px;
+            padding: 30px;
+            #color{
+                color: $unico;
+            }
+        }
+    }
+    .buscador{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding: 20px 100px;
+        img{
+            width: 80%;
+        }
+        input{
+            width: 90%;
+            border-radius: 10px;
+            border: solid $colortitulos ;
+            font-family: $fontparrafos;
+            font-size: 18px;
+        }
+    }
+    .mas{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding: 20px 100px;
+        h3{
+            width: 100%;
+            padding: 20px;
+            text-align: center;
+            color: $colortitulos;
+            font-family: $fontsubtitulos;
+            font-size: 20px;
+            text-decoration: dotted;
+            
+        }
+        p{
+            width: 60%;
+            text-align: center;
+            color: $colortitulos;
+            font-family: $fontsubtitulos;
+            font-size: 18px;
+        }
+    }
+    .galeria{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding: 20px 100px;
+        background-color: $fondounico;
+        h2{
+            width: 100%;
+            padding: 10px;
+            text-align: center;
+            color: $colortitulos;
+            font-family: $fontsubtitulos;
+            font-size: 25px;        
+        }
+        p{
+            width: 50%;
+            text-align: center;
+            color: $colorparrafos;
+            font-family: $fontparrafos;
+            font-size: 18px;
+        }
+    }
+}
