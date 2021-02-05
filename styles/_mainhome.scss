@@ -1,18 +1,21 @@
 .main-home{
+    width: 100%;
     .titulo{
+        width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
         flex-wrap: wrap;
-        padding: 20px 100px;
+        padding: 15px 20px;
         h1{
             width: 100%;
             text-align: center;
+            flex-wrap: wrap;
             color: $colortitulos;
             font-family: $fonttitulos;
-            font-size: 30px;
-            padding: 30px;
+            font-size: 100%;
+            padding: 30px 50px;
             #color{
                 color: $unico;
             }
@@ -24,17 +27,34 @@
         align-items: center;
         flex-direction: column;
         flex-wrap: wrap;
-        padding: 20px 100px;
+        padding: 15px 20px;
         img{
             width: 80%;
+            padding: 0 5px;
         }
-        input{
-            width: 90%;
-            border-radius: 10px;
-            border: solid $colortitulos ;
-            font-family: $fontparrafos;
-            font-size: 18px;
-        }
+        div{
+            width: 70%;
+            flex-direction: unset;
+            justify-content: center;
+            align-items: center;
+            input{
+                width: 100%;
+                border-radius: 10px;
+                border: solid $colortitulos .5px;
+                font-family: $fontparrafos;
+                font-size: 18px;
+                padding: 5px 25px;
+            }
+            span{
+                position: absolute;;
+                right: 18%;
+                i{
+                    color: $colortitulos;
+                    padding: 5px;
+
+                }
+            }
+        }    
     }
     .mas{
         display: flex;
@@ -42,7 +62,7 @@
         align-items: center;
         flex-direction: column;
         flex-wrap: wrap;
-        padding: 20px 100px;
+        padding: 20px 20px;
         h3{
             width: 100%;
             padding: 20px;
@@ -67,7 +87,7 @@
         align-items: center;
         flex-direction: column;
         flex-wrap: wrap;
-        padding: 20px 100px;
+        padding: 20px 20px;
         background-color: $fondounico;
         h2{
             width: 100%;
@@ -83,6 +103,24 @@
             color: $colorparrafos;
             font-family: $fontparrafos;
             font-size: 18px;
+        }
+    }
+}
+@media screen and (min-width: 1000px){
+    .main-home{
+        .titulo{
+            padding: 30px 250px;
+            h1{
+                width: 65%;
+            }
+        }
+        .buscador{
+            img{
+                width: 40%;
+            }
+            input{
+                width: 50%;
+            }
         }
     }
 }

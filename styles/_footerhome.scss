@@ -1,24 +1,28 @@
 .footer-home{
+    width: 100%;
     display: flex;
     align-items: center;
     flex-direction: column;
     flex-wrap: wrap;
     padding: 20px;
-    p{
-        width: 100%;
-        text-align: center;
-        color: $colorparrafos;
-        font-family: $fontparrafos;
-        font-size: 15px;
-    }
-    ul{
-        padding: 10px;
-        li{
-            display: inline-block;
-            flex-wrap:unset;
-            a{
-                padding: 10px;
-                color: #CDD6E0;
+    div{
+        p{
+            width: 100%;
+            text-align: center;
+            color: $colorparrafos;
+            font-family: $fontparrafos;
+            font-size: 13px;
+            padding: 10px;
+        }
+        ul{
+            padding: 10px;
+            li{
+                display: inline-block;
+                flex-wrap:unset;
+                a{
+                    padding: 10px;
+                    color: #CDD6E0;
+                }
             }
         }
     }
@@ -28,6 +32,34 @@
         padding: 10px;
         color: $colorparrafos;
         font-family: $fontparrafos;
-        font-size: 15px;
+        font-size: 13px;
+    }
+}
+@media screen and (min-width: 1000px){
+    .footer-home{
+        flex-direction: unset;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: unset;
+        padding: 30px 146px;
+        div{
+            display: flex;
+            flex-wrap: nowrap;
+            p{
+                width: 50%;
+                text-align: unset;
+                padding: 5px;
+            }
+            ul{
+                display: flex;
+                width: 50%;
+                li{
+                    display: inline-block;
+                }
+            }
+        }
+        span{
+            text-align: right;
+        }
     }
 }

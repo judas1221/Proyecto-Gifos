@@ -1,14 +1,16 @@
 .header-home{
+    width: 100%;
     .encabezado{
         display:flex;
         justify-content: space-between;
-        padding: 20px 10px;
+        padding: 10px;
         .logo{
             width: 15%;
 
         }
         nav{
             .menu{
+                
                 padding-top: 3px;
 
                 ul{ 
@@ -16,6 +18,7 @@
                     position: absolute;
                     top: 45px;
                     right: 0;
+                    font-size: 15px;
                     overflow: hidden;
                     list-style: none;
                     background:  rgba(87, 46, 229, .8) ;
@@ -84,10 +87,10 @@
         }
     }
 }
-@media screen and (max-width: 1000px){
+@media screen and (min-width: 1000px){
     .header-home{
         .encabezado{
-            padding: 30px 156px;
+            padding: 30px 100px;
             nav{
                 .menu{
                     ul{
@@ -96,21 +99,30 @@
                         list-style: none;
                         background-color: $fondogeneral;
                         overflow: hidden;
-                        background: none;
-                        height: none;
-                        position: none;
+                        background: unset;
+                        height: unset;
+                        position: unset;
+                        padding: 5px;
                         li{
-                            padding: 5px 10px;
+                            padding: 0 5px;
                             align-self: end; 
                             a{
                                 color: $colortitulos;
                                 padding: unset;
                                 padding-right: 48px;
                                 line-height: unset;
-                            }
-                            a:hover {
-                                color: unset;
-                            }   
+                                position: unset;
+                                button{
+                                    position: relative;
+                                    bottom: 5px;
+                                    width: 100%;
+                                    border-radius: 100%;
+                                    border: solid $colortitulos 1px;
+                                    background-color: $fondogeneral;
+                                    color: $colortitulos;
+                                    padding: 10px;
+                                }
+                            }                         
                         }
                         
                     }
