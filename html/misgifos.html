@@ -2,22 +2,22 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="GIFOS">
-    <link rel="shortcut icon" href="images/logo-desktop.svg">
+    <link rel="shortcut icon" href="../images/logo-desktop.svg">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/v4-shims.css">
     <title>GIFOS</title>
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="../styles/style.css">
 </head>
 <body>
     <header class="header-home">
         <div class="encabezado">
             <div class="logo">
                 <picture>
-                    <source srcset="images/logo-desktop.svg" media="(min-width: 1000px)">
-                    <source srcset="images/logo.mobile.svg" media="min-width: 999px)">
-                    <img src="images/logo-desktop.svg" alt="logo-desktop">
+                    <source srcset="../images/logo-desktop.svg" media="(min-width: 1000px)">
+                    <source srcset="../images/logo.mobile.svg" media="min-width: 999px)">
+                    <img src="../images/logo-desktop.svg" alt="logo-desktop">
                 </picture>
             </div>
             <div class="navegador">
@@ -29,30 +29,26 @@
                             <span></span>
                         <ul>
                             <li><a href="#">MODO OSCURO</a></li>
-                            <li><a href="html/favoritos.html">FAVORITOS</a></li>
-                            <li><a href="html/misgifos.html">MIS GIFS</a></li>
-                            <li ><a href="html/camara.html" > <button class="circulo uno">+</button></a></li>
+                            <li><a href="favoritos.html">FAVORITOS</a></li>
+                            <li><a href="#">MIS GIFS</a></li>
+                            <li><a href="camara.html" ><button class="circulo">+</button></a></li>
                         </ul>
                     </div>
                 </nav>
             </div>
         </div>
-    </header>
-    <main class="main-home" >
-        <section >
-            <div class="titulo">
-                <h1>Inspírate,busca,guarda y crea los mejores <span id="color">GIFOS</span></h1>
-            </div>
-            <div class="buscador">
-                <img src="images/ilustra_header.svg" alt="ilustra_header">
+    </header> 
+    <main class="main-misgifos">
+        <section>
+            <div class="gifguardados">
                 <div>
-                    <input type="search" id="search" name="search" placeholder="Busca GIFOS y más" />
-                    <span><i class="fa fa-search"></i></span>
+                    <img src="../images/icon-mis-gifos.svg" alt="mis-gifos-" id="logoipo">
+                    <h2>Mis GIFOS</h2>
                 </div>
-            </div>
-            <div class="mas">
-                <h3>Trending:</h3>
-                <p>Reactions, Entertainment, Sport, Stickers, Artists</p>
+                <div>
+                    <img src="../images/icon-mis-gifos-sin-contenido.svg" alt="gifos-sin-contenido" id="icon-vacio">
+                    <h2 id="color">¡Anímate a crear tu primer GIFO!</h2>
+                </div>
             </div>
         </section>
         <section >
@@ -62,7 +58,7 @@
                     GIFOS de nuestra comunidad
                 </p>
             </div>
-        </section>
+        </section>   
     </main>
     <footer class="footer-home">
         <div>

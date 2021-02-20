@@ -1,0 +1,106 @@
+.main-camara{
+    section {
+        display: flex;
+        .logocamara{
+            display: flex;
+            width: 25%;
+            align-items: center;
+            padding-left: 100px;
+            img{
+                width: 70%;
+                height: 90%;
+            }
+            .clip{
+                background-image: linear-gradient(to right, #4FE3C1, #FFFFFF);
+                clip-path: polygon(0 30%, 100% 0, 100% 100%, 0 70%);
+                height: 25%;
+                width: 50%;
+                margin: 3px;
+            }
+        }
+        .creargifo{
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            padding: 20px 20px 0 20px;
+            .contenedor-camara{
+                width: 100%;
+                border: solid $colortitulos 1px;
+                padding: 100px;
+                justify-content: center;
+                align-items: center;
+                h1{
+                    width: 100%;
+                    text-align: center;
+                    flex-wrap: wrap;
+                    color: $colortitulos;
+                    font-family: $fonttitulos;
+                    font-size: 1.5em;
+                    padding: 30px 50px;
+                }
+                p{
+                    text-align: center;
+                    color: $colorparrafos;
+                    font-family: $fontparrafos;
+                    font-size: 18px;
+                }
+            }
+            .lista{
+                display: flex;
+                flex-direction: unset;
+                justify-content: center;    
+                padding: 10px 100px;            
+                ul{
+                    display: flex;
+                    align-items: center;
+                    li{
+                        width: 30px;
+                        height: 30px;
+                        border-radius: 50%;
+                        border: 1px solid $colortitulos;
+                        color: $colortitulos;
+                        text-align: center;
+                        font-family: $fontparrafos;
+                        font-size: 18px;
+                        font-weight: 800;
+                        margin: 10px;
+                    }
+                }
+            }
+        }
+        .pelicula{
+            width: 25%;
+            padding: 40px;
+            img{
+                position: relative;
+                top: 350px;
+            }
+        }
+    }
+    section{
+        .comenzar{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            span{
+                width: 55%;
+                height: 10px;
+                background-color: $colortitulos;
+                border-radius: 5px; 
+            }  
+            a{
+                width: 10%;
+                border: 1.3px solid $colortitulos;
+                border-radius: 20px;
+                text-align: center;
+                font-family: $fonttitulos;
+                font-weight: 800;
+                font-size: 16px;
+                color: $colortitulos;
+                padding: 5px ;
+                margin: 20px;
+            }          
+        }
+    }
+}
