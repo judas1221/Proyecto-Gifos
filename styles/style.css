@@ -39,8 +39,9 @@ a {
   width: 50px;
   height: 50px; }
 
-.seleccion {
-  color: #9dafc4; }
+.oscuro {
+  background-color: #1f1f1f;
+  color: #f1eded; }
 
 /*header*/
 .header-home {
