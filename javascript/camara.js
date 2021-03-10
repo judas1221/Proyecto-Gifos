@@ -1,3 +1,22 @@
+import {modoOscuro} from '/javascript/script.js';
+console.log(modoOscuro);
+function cambiarImagenes(){
+    let camaraDia= document.getElementById("camara_dia");
+    camaraDia.classList.toggle("nocturna");
+    let peliculaDia = document.getElementById("pelicula_dia");
+    peliculaDia.classList.toggle("nocturna");
+}
+modoOscuro.addEventListener('click',cambiarImagenes);
+
+//modoOscuro.removeEventListener('click', cambiarImagenes);
+
+function crearImagen(){
+   let  camaraNoche = document.getElementById("camara_noche");
+   camaraNoche.classList.toggle("nocturna");
+   let peliculaNoche = document.getElementById('pelicula_noche');
+   peliculaNoche.classList.toggle("nocturna");       
+}
+modoOscuro.addEventListener('click', crearImagen);
 
 let video = document.getElementsByTagName("video")[0];
 

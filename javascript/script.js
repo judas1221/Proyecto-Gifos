@@ -1,24 +1,20 @@
 // Cambiar el color al seleccionar ul menu nav
-let cuerpoweb = document.body; 
-let modoOscuro = document.getElementById("modooscuro");
-let favoritos = document.getElementById("favoritos");
-let misGifs = document.getElementById('misgifs');
-let camara = document.getElementById("camara");
+export let cuerpoweb = document.body; 
+export let modoOscuro = document.getElementById("modooscuro");
+export let favoritos = document.getElementById("favoritos");
+export let misGifs = document.getElementById('misgifs');
+export let camara = document.getElementById("camara");
 
-function cambiarModo() { 
+export function cambiarModo() { 
     cuerpoweb.classList.toggle("oscuro");
     modoOscuro.innerHTML - cuerpoweb.classList.contains("oscuro") ? "modo Diurno" : "modo nocturno";
 }
 modoOscuro.addEventListener('click', cambiarModo);
 
-function modificarColor(){
-    modoOscuro.classList.toggle("seleccion-menu")[0];
+export function modificarColor(){
+    modoOscuro.classList.toggle("seleccion-menu");
 }
 modoOscuro.addEventListener('click', modificarColor);
-
-
-
-// Cambiar el color a modo oscuro
 
 
 

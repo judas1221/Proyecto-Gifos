@@ -37,5 +37,38 @@
             font-family: $fontparrafos;
             font-size: 18px;
         }
+        .slider {
+            width: 85%;
+            overflow: hidden;
+            ul {
+                display: flex;
+                padding: 0;
+                width: 320%;
+                
+                animation: cambio 20s infinite alternate linear;
+                
+                li {
+                    width: 100%;
+                    list-style: none;
+                    img {
+                        width: 200px;
+                        height: 150px;
+                    }
+                }
+            }
+        }
+        @keyframes cambio {
+            0% {margin-left: 0;}
+            20% {margin-left: 0;}
+            
+            25% {margin-left: -100%;}
+            45% {margin-left: -100%;}
+            
+            50% {margin-left: -200%;}
+            70% {margin-left: -200%;}
+            
+            75% {margin-left: -300%;}
+            100% {margin-left: -300%;}
+        }
     }    
 }

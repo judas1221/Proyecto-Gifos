@@ -40,8 +40,9 @@
     </header>
     <main class="main-camara">
         <section>
-            <div class="logocamara">
-                <img src="../images/camara.svg" alt="camara">
+            <div id="logocamara" class="logocamara">
+                <img  id="camara_dia" src="../images/camara.svg" alt="camara"/>
+                <img id="camara_noche" class="nocturna" src="../images/camara-modo-noc.svg" alt="camara noc"/>
                 <div class="clip"></div>
             </div>
             <div class="creargifo">
@@ -59,8 +60,10 @@
                     </ul>
                 </div>
             </div>
-            <div class="pelicula"> 
-                <img src="../images/pelicula.svg" alt="pelicula">
+            <div id="logopelicula" class="pelicula"> 
+                <img id="pelicula_dia" src="../images/pelicula.svg" alt="pelicula"/>
+                <img  id="pelicula_noche" class="nocturna" src="../images/pelicula-modo-noc.svg" alt="camara noc"/>
+    
             </div>
         </section>
         <section>
@@ -81,6 +84,7 @@
         </div>
         <span>© GIFOS 2021 All Rigths Reserved</span>
     </footer>
-    <script src="../javascript/camara.js"></script>
+    <script type="module" src="../javascript/script.js"></script>
+    <script type="module" src="../javascript/camara.js"></script>
 </body>
 </html>
