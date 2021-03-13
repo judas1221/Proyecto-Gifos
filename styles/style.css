@@ -322,11 +322,11 @@ a {
 }
 
 .main-home .buscador div {
-  width: 70%;
-  -webkit-box-orient: unset;
-  -webkit-box-direction: unset;
-      -ms-flex-direction: unset;
-          flex-direction: unset;
+  width: 100%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -336,7 +336,9 @@ a {
 }
 
 .main-home .buscador div input {
-  width: 100%;
+  position: relative;
+  left: 5%;
+  width: 85%;
   border-radius: 10px;
   border: solid #572DE6 0.5px;
   font-family: "Roboto", sans-serif;
@@ -344,12 +346,9 @@ a {
   padding: 5px 25px;
 }
 
-.main-home .buscador div span {
-  position: absolute;
-  right: 18%;
-}
-
-.main-home .buscador div span i {
+.main-home .buscador div i {
+  position: relative;
+  z-index: 1;
   color: #572DE6;
   padding: 5px;
 }
@@ -432,6 +431,13 @@ a {
 .main-home .galeria .slider ul li img {
   width: 200px;
   height: 150px;
+  padding: 5px;
+}
+
+.main-home .galeria .slider ul li h6 {
+  font-family: "Roboto", sans-serif;
+  color: #572DE6;
+  text-align: center;
 }
 
 @-webkit-keyframes cambio {
@@ -498,8 +504,14 @@ a {
   .main-home .buscador img {
     width: 40%;
   }
-  .main-home .buscador input {
+  .main-home .buscador div input {
     width: 50%;
+    position: relative;
+    left: 25%;
+  }
+  .main-home .buscador div i {
+    position: relative;
+    left: 22%;
   }
 }
 

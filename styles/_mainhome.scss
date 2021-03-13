@@ -30,26 +30,25 @@
             padding: 0 5px;
         }
         div{
-            width: 70%;
-            flex-direction: unset;
+            width: 100%;
+            flex-direction: row;
             justify-content: center;
             align-items: center;
             input{
-                width: 100%;
+                position: relative;
+                left: 5%;
+                width: 85%;
                 border-radius: 10px;
                 border: solid $colortitulos .5px;
                 font-family: $fontparrafos;
                 font-size: 18px;
                 padding: 5px 25px;
-            }
-            span{
-                position: absolute;;
-                right: 18%;
-                i{
-                    color: $colortitulos;
-                    padding: 5px;
-
-                }
+            }    
+            i{
+                position: relative;
+                z-index: 1;
+                color: $colortitulos;
+                padding: 5px;
             }
         }    
     }
@@ -111,6 +110,12 @@
                     img {
                         width: 200px;
                         height: 150px;
+                        padding: 5px;
+                    }
+                    h6{
+                        font-family: $fontparrafos;
+                        color: $colortitulos;
+                        text-align: center;
                     }
                 }
             }
@@ -142,9 +147,17 @@
             img{
                 width: 40%;
             }
-            input{
-                width: 50%;
-            }
+            div{
+                input{
+                    width: 50%;
+                    position: relative;
+                    left: 25%;
+                }
+                i{
+                    position: relative;
+                    left: 22%;
+                }
+            }   
         }
     }
 }
