@@ -43,12 +43,25 @@
                 font-family: $fontparrafos;
                 font-size: 18px;
                 padding: 5px 25px;
+                :focus {
+                    border: none;
+                }
             }    
             i{
                 position: relative;
                 z-index: 1;
                 color: $colortitulos;
                 padding: 5px;
+            }
+            .autocompletar{
+                position: relative;
+                left: 100px;
+                display: flex;
+                flex-direction: column;
+                justify-content: start;
+                width: 50%;
+
+
             }
         }
         .resultsearch{
@@ -77,10 +90,12 @@
         }
         .moresearch{
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
             padding: 30px;
             input{
+                position: unset;
                 width: 20%;
                 background-color: transparent;
                 font-family: $fontsubtitulos;
@@ -147,7 +162,7 @@
                     img {
                         width: 200px;
                         height: 150px;
-                        padding: 5px;
+                        padding: 10px;   
                     }
                     h6{
                         font-family: $fontparrafos;

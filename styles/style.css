@@ -11,6 +11,7 @@
           box-sizing: border-box;
   list-style: none;
   text-decoration: none;
+  outline: none;
 }
 
 html {
@@ -346,11 +347,31 @@ a {
   padding: 5px 25px;
 }
 
+.main-home .buscador div input :focus {
+  border: none;
+}
+
 .main-home .buscador div i {
   position: relative;
   z-index: 1;
   color: #572DE6;
   padding: 5px;
+}
+
+.main-home .buscador div .autocompletar {
+  position: relative;
+  left: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  width: 50%;
 }
 
 .main-home .buscador .resultsearch {
@@ -397,6 +418,10 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -407,6 +432,7 @@ a {
 }
 
 .main-home .buscador .moresearch input {
+  position: unset;
   width: 20%;
   background-color: transparent;
   font-family: "Montserrat", sans-serif;
@@ -492,7 +518,7 @@ a {
 .main-home .galeria .slider ul li img {
   width: 200px;
   height: 150px;
-  padding: 5px;
+  padding: 10px;
 }
 
 .main-home .galeria .slider ul li h6 {
@@ -730,7 +756,7 @@ a {
   display: none;
 }
 
-.main-camara section .creargifo .contenedor-camara h1 {
+.main-camara section .creargifo .contenedor-camara div h1 {
   width: 100%;
   text-align: center;
   -ms-flex-wrap: wrap;
@@ -741,7 +767,7 @@ a {
   padding: 30px 50px;
 }
 
-.main-camara section .creargifo .contenedor-camara p {
+.main-camara section .creargifo .contenedor-camara div p {
   text-align: center;
   color: #000000;
   font-family: "Roboto", sans-serif;
@@ -907,6 +933,13 @@ a {
 .main-misgifos .galeria .slider ul li img {
   width: 200px;
   height: 150px;
+  padding: 10px;
+}
+
+.main-misgifos .galeria .slider ul li h6 {
+  font-family: "Roboto", sans-serif;
+  color: #572DE6;
+  text-align: center;
 }
 
 @keyframes cambio {
@@ -1020,6 +1053,13 @@ a {
 .main-favoritos .galeria .slider ul li img {
   width: 200px;
   height: 150px;
+  padding: 10px;
+}
+
+.main-favoritos .galeria .slider ul li h6 {
+  font-family: "Roboto", sans-serif;
+  color: #572DE6;
+  text-align: center;
 }
 
 @keyframes cambio {

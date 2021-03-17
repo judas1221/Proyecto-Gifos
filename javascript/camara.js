@@ -20,6 +20,10 @@ modoOscuro.addEventListener('click', crearImagen);
 
 let video = document.getElementsByTagName("video")[0];
 
+let divTexto = document.getElementById("subcontenedor");
+let newButton = `<a id="grabar">Grabar</a>`;
+let buttonToAppend = document.getElementById("controlcamera");
+console.log(buttonToAppend);
 function getStreamAndRecord () { 
     navigator.mediaDevices.getUserMedia({
     audio: false,
@@ -38,12 +42,24 @@ function mostrarCamara(){
     video.classList.toggle("video");
 }
 function borrarTexto(){
-    let divTexto = document.getElementById("contenedor");
-    divTexto.removeChild(divTexto.childNodes[3]);
-    divTexto.removeChild(divTexto.childNodes[4]);
-    divTexto.removeChild(divTexto.childNodes[5]);
+    divTexto.classList.toggle("video");
+    activarCamara.classList.toggle("video");
+    buttonToAppend.innerHTML = newButton;
+    
 }
 let activarCamara = document.getElementById("comenzar");
 activarCamara.addEventListener('click', getStreamAndRecord);
 activarCamara.addEventListener('click', mostrarCamara);
 activarCamara.addEventListener('click',borrarTexto);
+
+// Grabar
+recorder = RecordRTC(stream, {
+    type: 'gif',
+    frameRate: 1,
+    quality: 10,
+    width: 360,
+    hidden: 240,
+    onGifRecordingStarted: function() {
+     console.log('started')
+   },
+  });

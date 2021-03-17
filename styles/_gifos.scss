@@ -53,6 +53,12 @@
                     img {
                         width: 200px;
                         height: 150px;
+                        padding: 10px;   
+                    }
+                    h6{
+                        font-family: $fontparrafos;
+                        color: $colortitulos;
+                        text-align: center;
                     }
                 }
             }

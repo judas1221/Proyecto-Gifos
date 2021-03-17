@@ -32,20 +32,22 @@
                 .video{
                     display: none;
                 }
-                h1{
-                    width: 100%;
-                    text-align: center;
-                    flex-wrap: wrap;
-                    color: $colortitulos;
-                    font-family: $fonttitulos;
-                    font-size: 1.5em;
-                    padding: 30px 50px;
-                }
-                p{
-                    text-align: center;
-                    color: $colorparrafos;
-                    font-family: $fontparrafos;
-                    font-size: 18px;
+                div{
+                    h1{
+                        width: 100%;
+                        text-align: center;
+                        flex-wrap: wrap;
+                        color: $colortitulos;
+                        font-family: $fonttitulos;
+                        font-size: 1.5em;
+                        padding: 30px 50px;
+                    }
+                    p{
+                        text-align: center;
+                        color: $colorparrafos;
+                        font-family: $fontparrafos;
+                        font-size: 18px;
+                    }
                 }
             }
             .lista{
