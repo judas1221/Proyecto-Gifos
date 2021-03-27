@@ -63,3 +63,4 @@ recorder = RecordRTC(stream, {
      console.log('started')
    },
   });
+  

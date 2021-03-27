@@ -55,36 +55,58 @@
             }
             .autocompletar{
                 position: relative;
-                left: 100px;
+                left: 8%;
                 display: flex;
                 flex-direction: column;
                 justify-content: start;
-                width: 50%;
-
-
+                background: $fondounico;
+                border-radius: 10px;
+                width: 80%;
+                li{
+                    padding: 5px;
+                    font-family: $fontparrafos;
+                    font-size: 18px;
+                }
             }
         }
         .resultsearch{
             display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
+            
             width: 100%;
-
-            div{
+            ul{
                 display: flex;
+                justify-content: space-between;
                 flex-wrap: wrap;
-                flex-direction: column;
-                justify-content: center;
-                width: 30%;
-                img{
-                    width: 200px;
-                    height: 200px;
-                    padding: 10px;
-                }
-                h6{
-                    font-family: $fontparrafos;
-                    color: $colortitulos;
-                    text-align: center;
+                padding: 0;
+                li{
+                    display: flex;
+                    flex-direction: column;
+                    width: 30%;
+                    img{
+                        width: 250px;
+                        height: 250px;
+                        padding: 10px;
+                    }
+                    h6{
+                        font-family: $fontparrafos;
+                        color: $colortitulos;
+                        text-align: center;
+                    }
+                    div{
+                        display: flex;
+                        flex-direction: row;
+                        width: 50%;
+                        justify-content: flex-end;
+                        position: relative;
+                        bottom: 80%;
+                        left: 10%;
+                        img{
+                            width: 32px;
+                            height: 32px;
+                            padding: 2px;
+                            
+                        }
+                    }
                 }
             }
         }
@@ -162,12 +184,25 @@
                     img {
                         width: 200px;
                         height: 150px;
-                        padding: 10px;   
+                        padding: 10px;    
                     }
                     h6{
                         font-family: $fontparrafos;
                         color: $colortitulos;
                         text-align: center;
+                    }
+                    div{
+                        display: flex;
+                        width: 50%;
+                        justify-content: flex-end;
+                        position: relative;
+                        bottom: 175px;
+                        left: 80px;
+                        img{
+                            width: 32px;
+                            height: 32px;
+                            padding: 2px;
+                        }
                     }
                 }
             }
@@ -209,7 +244,56 @@
                     position: relative;
                     left: 22%;
                 }
+                .autocompletar{
+                    position: relative;
+                    left: 25%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: start;
+                    background: $fondounico;
+                    width: 50%;
+                    li{
+                        padding: 5px;
+                        font-family: $fontparrafos;
+                        font-size: 18px;
+                    }
+                }
             }   
+        }
+        .resultsearch{
+            width: 90%;
+            ul{
+                width: 70%;
+                li{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    width: 30%;
+                    img{
+                        width: 250px;
+                        height: 250px;
+                        padding: 10px;
+                    }
+                    h6{
+                        font-family: $fontparrafos;
+                        color: $colortitulos;
+                        text-align: center;
+                    }
+                    div{
+                        display: flex;
+                        flex-direction: unset;
+                        width: 100%;
+                        justify-content: flex-end;
+                        position: relative;
+                        bottom: 185px;
+                        img{
+                            width: 32px;
+                            height: 32px;
+                            padding: 2px;   
+                        }
+                    }
+                }
+            }
         }
     }
 }
