@@ -443,15 +443,16 @@ a {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  position: relative;
-  bottom: 80%;
-  left: 10%;
+  position: absolute;
 }
 
 .main-home .buscador .resultsearch ul li div img {
+  position: relative;
   width: 32px;
   height: 32px;
   padding: 2px;
+  top: 230px;
+  right: 40%;
 }
 
 .main-home .buscador .moresearch {
@@ -575,15 +576,16 @@ a {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  position: relative;
-  bottom: 175px;
-  left: 80px;
+  position: absolute;
 }
 
 .main-home .galeria .slider ul li div img {
+  position: relative;
   width: 32px;
   height: 32px;
   padding: 2px;
+  bottom: 175px;
+  right: 80%;
 }
 
 @-webkit-keyframes cambio {
@@ -721,13 +723,14 @@ a {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
-    position: relative;
-    bottom: 185px;
+    position: absolute;
   }
   .main-home .resultsearch ul li div img {
+    position: relative;
     width: 32px;
     height: 32px;
     padding: 2px;
+    top: 230px;
   }
 }
 
