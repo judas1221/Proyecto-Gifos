@@ -1,7 +1,6 @@
 export const baseURLTrending = "http://api.giphy.com/v1/gifs/trending";
 export const apiKey = "JW1PnqhdZsl2zUphwiUSzJrjJ6TYvXyz";
-//
-let imageMouseOver = document.querySelector(".slider ul");
+
 let container = document.createElement("div");
 let favoriteCard = document.createElement("img");
 favoriteCard.setAttribute("src","images/icon-fav.svg");
@@ -40,6 +39,12 @@ trending.then(baseData => {
             value.replaceChild(container2,container);
         });
     }
+    favoriteCard.addEventListener('click',()=>{
+        for (let value of arrayTrending){
+            addFavorite(value);
+        }
+    });
+    
 }).catch(error => console.log(error));
 const createTrendingCard = (parameter) => {
     return `<li><img src="${
@@ -100,7 +105,6 @@ autocompletar.addEventListener("click", event =>{
             value.replaceChild(container2,container);
         });
     }
-
 }).catch(error => console.log(error));
 });
 async function getSearchGifs(parameter){
@@ -119,6 +123,21 @@ const createButton =() =>{
     divContainerinput.innerHTML = input;
 }
 autocompletar.addEventListener("click", createButton);
+
+//
+const addFavorite = (parameter) =>{
+    let number = 0;
+    while(number<100){
+        number +=1
+        break
+    }
+    let save =parameter.images.original.url;
+    console.log(save);
+    localStorage.setItem(`favoritos ${number}`, save);
+}
+
+console.log(localStorage.getItem('favoritos'));
+
 
 
 

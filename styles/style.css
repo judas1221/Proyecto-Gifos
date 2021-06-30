@@ -451,7 +451,7 @@ a {
   width: 32px;
   height: 32px;
   padding: 2px;
-  top: 230px;
+  top: 30px;
   right: 40%;
 }
 
@@ -585,7 +585,7 @@ a {
   height: 32px;
   padding: 2px;
   bottom: 175px;
-  right: 80%;
+  right: 60%;
 }
 
 @-webkit-keyframes cambio {
@@ -726,7 +726,7 @@ a {
     position: absolute;
   }
   .main-home .resultsearch ul li div img {
-    position: relative;
+    position: absolute;
     width: 32px;
     height: 32px;
     padding: 2px;
